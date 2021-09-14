@@ -207,7 +207,10 @@
 
 // console.log(Factorial(5))
 
-// 2nd using  iteration method
+//----------------- 2nd using  iteration method
+
+// const num = Number(prompt("enter a number"));
+
 // function factorial(){
 //     let result = 1
 
@@ -227,34 +230,73 @@
 
 //Q11. ----------------------Write a Program to take a number input from user and find if the number is Prime or not.
 
-const num = Number(prompt("enter a number"));
 
 
-  
- isPrime = true;
+// function primeNumber() {
+// isPrime = true;
 
-  if (num ==1 ) {
-    console.log(" it is  neither a prime nor compostie");
+//   if (num ==1 ) {
+//     console.log(" it is  neither a prime nor compostie");
+// }
 
-  } 
-  else if (num > 1) {
-    for (let i = 2; i < num; i++) {
-      if (num % i  == 0) {
-        isPrime = false;
-        break;
-      }
-    }
+//   else if (num > 1) {
+//     for (let i = 2; i < num; i++) {
+//       if (num % i  == 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
 
-    if (isPrime) {
-      console.log("it is prime");
-    } else {
-      console.log(" number not prime");
-    }
-}
-  
-  else {
-    console.log("please enter postive number");
-  }
+//     if (isPrime) {
+//       console.log("it is prime");
+//     } else {
+//       console.log(" number not prime");
+//     }
+// }
 
-  
+//   else {
+//     console.log("please enter postive number");
+//   }
 
+// }
+
+// primeNumber()
+
+
+
+
+// calling funtion 
+
+// const num = Number(prompt("enter a number"));
+
+// function isPrimeNumber(num) {
+//   let isPrime = true;
+//   if (num > 1) {
+//     for (let i = 2; i < num; i++) {
+//       if (num % i == 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+
+//     if (isPrime) {
+//       console.log("it is prime");
+//     } else {
+//       console.log(" number not prime");
+//     }
+//   }
+
+//   return num;
+// }
+
+// function primeNumber() {
+//   if (num == 1) {
+//     console.log(" it is neither prime nor composite");
+//   } else if (num < 1) {
+//     console.log(" please enter a positive number ");
+//   } else {
+//     console.log(isPrimeNumber(num));
+//   }
+// }
+
+// primeNumber();
