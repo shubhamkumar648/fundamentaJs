@@ -104,7 +104,7 @@
 
 // knowDaysOfmonth()
 
-// Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
+//Q6:- Fizzbuzz - Write a program to return an array from 1 to 100. But for every multiple of 3, replace the number with "Fizz", for every multiple of 5, replace the number with "Buzz" and for every multiples of 3 & 5, replace with "FizzBuzz".
 
 // function FizzBuzz () {
 
@@ -133,7 +133,7 @@
 
 // FizzBuzz()
 
-// Print the following star pattern :-
+// Q7:- Print the following star pattern :-
 
 // *
 // * *
@@ -141,17 +141,88 @@
 // * * * *
 // * * * * *
 
-let num = 5;
-let string = "";
+// let num = 5;
+// let string = "";
 
-for (let i = 1; i <= num; i++) {
-  {
-    for (let j = 0; j < i; j++) {
-      string += "*";
+// for (let i = 1; i <= num; i++) {
+//   {
+//     for (let j = 0; j < i; j++) {     //nested loop
+//       string += "*";
+//     }
+//   }
+
+//   string += "\n";
+// }
+
+// console.log(string);
+
+//Q8:- Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+// let num2 = Number(prompt("enetr a number"))
+
+// function multiply() {
+
+// for(let num = 1; num<=12; num++){
+
+//     console.log( num2 * num)
+// }
+
+// }
+
+// multiply()
+
+//Q9:- Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
+
+//The Fibonacci sequence is the integer sequence where the first two terms are 0 and 1. After that, the next term is defined as the sum of the previous two terms.
+
+// const num = Number(prompt("enter a number"));
+
+// function fibonicii() {
+//   let a = 0,
+//     b = 1,
+//     c;
+
+//   for (let i = 0; i <= num; i++) {
+//     console.log(a);
+//     document.write("<br>", a);
+//     c = a + b;
+//     a = b;
+//     b = c;
+//   }
+// }
+
+// fibonicii();
+
+//Q10. Write a program to take an input from a user and find its Factorial. Example: Factorial of 5 is 120
+
+  const n = Number(prompt("enter a number"));
+
+// function Factorial(num) {
+//   if (num <=1) {
+//     return 1;
+//   } else {
+//     return   (num * Factorial(num - 1));
+//   }
+// }
+
+// console.log(Factorial(5))
+
+
+// 2nd using  iteration method
+function factorial(){
+    let result = 1
+
+    if(n <=1){
+        return result;
+    }else{
+        for (let i = n; i>=1; i--){
+
+           result = result * i
+        } 
+          return console.log(result)
     }
-  }
 
-  string += "\n";
 }
 
-console.log(string);
+factorial()
+
