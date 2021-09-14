@@ -195,7 +195,7 @@
 
 //Q10. Write a program to take an input from a user and find its Factorial. Example: Factorial of 5 is 120
 
-  const n = Number(prompt("enter a number"));
+//   const n = Number(prompt("enter a number"));
 
 // function Factorial(num) {
 //   if (num <=1) {
@@ -207,22 +207,54 @@
 
 // console.log(Factorial(5))
 
-
 // 2nd using  iteration method
-function factorial(){
-    let result = 1
+// function factorial(){
+//     let result = 1
 
-    if(n <=1){
-        return result;
-    }else{
-        for (let i = n; i>=1; i--){
+//     if(n <=1){
+//         return result;
+//     }else{
+//         for (let i = n; i>=1; i--){
 
-           result = result * i
-        } 
-          return console.log(result)
+//            result = result * i
+//         }
+//           return console.log(result)
+//     }
+
+// }
+
+// factorial()
+
+//Q11. ----------------------Write a Program to take a number input from user and find if the number is Prime or not.
+
+const num = Number(prompt("enter a number"));
+
+
+  
+ isPrime = true;
+
+  if (num ==1 ) {
+    console.log(" it is  neither a prime nor compostie");
+
+  } 
+  else if (num > 1) {
+    for (let i = 2; i < num; i++) {
+      if (num % i  == 0) {
+        isPrime = false;
+        break;
+      }
     }
 
+    if (isPrime) {
+      console.log("it is prime");
+    } else {
+      console.log(" number not prime");
+    }
 }
+  
+  else {
+    console.log("please enter postive number");
+  }
 
-factorial()
+  
 
