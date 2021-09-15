@@ -230,8 +230,6 @@
 
 //Q11. ----------------------Write a Program to take a number input from user and find if the number is Prime or not.
 
-
-
 // function primeNumber() {
 // isPrime = true;
 
@@ -262,10 +260,7 @@
 
 // primeNumber()
 
-
-
-
-// calling funtion 
+// calling funtion
 
 // const num = Number(prompt("enter a number"));
 
@@ -300,3 +295,18 @@
 // }
 
 // primeNumber();
+
+//12. Write a program to take a day as an input and determine whether it is a weekday or weekend. Example: Tuesday is weekday.
+
+
+// const day = prompt("enter a day");
+
+//     if( day === "monday" || day === "tuesday" || day === "wednesday"|| day === "thrusday||") {
+
+//       document.write(` ${day} is weekday`);
+//     }
+// else {
+//   document.write(` ${day}  is weekend`);
+// }
+
+// we can do this program using switc case in more precise way
