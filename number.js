@@ -160,11 +160,24 @@ console.log(reverseNum(32243));
 // Enter the Number of Rotations : 2
 // Output : 3412
 
+
+
 // Write a Program to convert Decimal to Binary.
 
 // Enter the number to convert: 5
 // Binary of Given Number is=101
+
+const DecimaltoBinary = (num) => num.toString(2)
+console.log(DecimaltoBinary(5));
+
+//imp note: the JavaScript built-in method toString([radix]) returns a string value in a 
+// specified radix (base). Here, toString(2) converts the decimal number to binary number.
+
+
 // Follow up Question : Write a Program to Convert Octal to Decimal.
 
 // Enter an octal number: 116
 // Octal of Given Number = 78 in
+
+let ocatlTodecimal = (num) => parseInt(num,8)
+console.log(ocatlTodecimal(116));
