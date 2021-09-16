@@ -117,46 +117,49 @@ console.log(naturalNo(100));
 // 3
 // 1111
 
-
-let num = ("enter a number")
+let num = "enter a number";
 for (let i = 1; i <= num; i++) {
+  result = 2 * i - 1;
 
-   result = 2*i-1
-
-   console.log(result);
-
-
+  console.log(result);
 }
-
-
-
-
-
 
 // Write a JavaScript program to compute the sum of all digits that occur in a given string.
 
 // Input: 1234
 // Output: 1+2+3+4 = 10
 
+//note: there are two method you can solve using number and and also using string method
 
-let num3 = 1234
+//string method using modern array method(i.e map and reduce) and es6 arrow function
+let input = 1234,
+  resultant = input
+    .toString()
+    .split("")
+    .map(Number)
+    .reduce((c, d) => c + d, 0);
 
-  num3.split(" ") + join()
+console.log(resultant);
 
-  console.log(num3);
 // Write a JavaScript program that reverses a number.
 
 // Example:
-
 // Input:  32243;
 // Output:  34223
+
+function reverseNum(n1) {
+  let result = parseFloat(n1.toString().split("").reverse().join(""));
+
+  return result;
+}
+console.log(reverseNum(32243));
 // Write a Program to cyclically Rotate a Number by X positions in the left direction, as provided by the user.
 
 // Example-
-
 // Enter a Number : 1234
 // Enter the Number of Rotations : 2
 // Output : 3412
+
 // Write a Program to convert Decimal to Binary.
 
 // Enter the number to convert: 5
