@@ -210,4 +210,22 @@ console.log(toSentenceCase(" we are neoGreammers"))
 // }
 
 
-// console.log(stringCapital(" we are indians"));
+// console.log(stringCapital(" we are indians"
+
+
+// Given an array of numbers, your function should return an array in the ascending order.
+// Example:
+// Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+
+// Note: By default, the sort method sorts elements alphabetically. To sort numerically just
+//  add a new method which handles numeric sorts (sortNumber, shown below) -
+
+let sortArray = [100,83,32,9,45,61]
+
+sortArray.sort(function (a,b) {
+    
+    return a-b
+})
+
+console.log(sortArray);
+      
