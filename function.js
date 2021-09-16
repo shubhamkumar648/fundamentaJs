@@ -142,7 +142,7 @@ function power (a,b) {
 //   return  arr.splice(index,n1,item);
 // }
 
-console.log(replaceArr([1,5,3,5,6,8],5,10));
+// console.log(replaceArr([1,5,3,5,6,8],5,10));
 
 // Given two arrays, your function should return single merged array.
 // Example:
@@ -175,3 +175,39 @@ function minDate() {
 
 
 }
+
+
+//------------------------------------------ Advance
+
+// Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places. Example:
+// Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
+// Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
+
+
+
+
+// Given a sentence, return a sentence with first letter of all words as capital.
+// Example:
+// Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
+
+    function toSentenceCase(string) {  
+        return string.toLowerCase().split(' ').map(s => s.charAt(0).toUpperCase() + s.substring(1)).join(' ');  
+    }  
+
+
+console.log(toSentenceCase(" we are neoGreammers"))
+
+// function stringCapital(string) {
+
+//     string.split(" ")
+
+//     for( let i  = 0 ; i < string.length ; i++) {
+
+//       string[i] =   string[i][0].toUpperCase()+ string[i].substring(1)
+//     }
+ 
+//     return string.join('')
+// }
+
+
+// console.log(stringCapital(" we are indians"));
