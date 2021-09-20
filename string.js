@@ -49,16 +49,12 @@ function aplhaNUmerric(str) {
   var Exp = /((^[0-9]+[a-z]+)|(^[a-z]+[0-9]+))+[0-9a-z]+$/i;
 
   //   if(str.match(Exp)) {
-
-  //     console.log( " it is alphanumeric");
-
+//     console.log( " it is alphanumeric");
   //   }
-
   //   else {
-
   //     console.log( " not alphanumeric");
   //   }
-
+ 
   // using terniary operator es6
   return str.match(Exp) ? "it is numeric" : " it not alphanumeric";
 }
