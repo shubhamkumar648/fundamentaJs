@@ -2,6 +2,9 @@ const showOutput2 = document.querySelector("#Output-text")
 const showInput2= document.querySelector("#text-Input2")
 const submitInputbtn2 = document.querySelector("#submit-Input2")
 
+console.log(submitInputbtn2);
+
+
 const red = document.querySelector("#red")
 const green = document.querySelector("#green")
 const blue = document.querySelector("#blue")
