@@ -61,9 +61,18 @@ const studentDetails = [
 ];
 
 
-for(let i=1; i <=studentDetails.length; i++) {
+/*
+ for( let i = 0; i<=studentDetails.length;i++){
+    
+     console.log(studentDetails[i].name);
 
-    console.log(studentDetails.name);
+ }
+ */
 
-}
 
+/*  for(let studentDetail of studentDetails) {
+
+    console.log(studentDetail.name);
+  } */
+
+ let PrintName = studentDetails.map(studentName => studentName.name)    //using modern array method
