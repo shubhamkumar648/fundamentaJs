@@ -76,13 +76,12 @@ const studentDetails = [
 
 // ---------------------  print total marks --------------------------
 
-/*    
  for (let i = 0; i < studentDetails.length; i++) {
 
   console.log(Number(studentDetails[i].computer+studentDetails[i].english+studentDetails[i].maths+studentDetails[i].science));   
 
  }
- */
+ 
 
 //  2nd method to write function using forEach
 
@@ -103,48 +102,47 @@ const studentDetails = [
 
 //  Print the name of student whose total marks is highest.
 
-// let heigestMark = 0;
-// let nameofStudent = "";
-// let lowestMark = 0;
+let heigestMark = 0;
+let nameofStudent = "";
 
 
-// studentDetails.forEach((studentsMarks) => {
-//   let totalMark = Number(
-//       studentsMarks.computer +
-//       studentsMarks.english +
-//       studentsMarks.maths +
-//       studentsMarks.science
-//   );
+studentDetails.forEach((studentsMarks) => {
+  let totalMark = Number(
+      studentsMarks.computer +
+      studentsMarks.english +
+      studentsMarks.maths +
+      studentsMarks.science
+  );
 
-//   if (totalMark > heigestMark) {
-//     heigestMark = totalMark;
-//     nameOfStudent = studentsMarks.name;
-//   }
+  if (totalMark > heigestMark) {
+    heigestMark = totalMark;
+    nameOfStudent = studentsMarks.name;
+  }
 
-// });
+});
 
-// console.log(nameOfStudent + "is height markwhich  is:" + lowestMark);
+console.log(nameOfStudent + "is height markwhich  is:" + heigestMark);
 
 
 //1.3  Print the name of student whose total marks is lowest.
 
-
+//------ not complete
 
 //1.4 Print the average marks of the class in computer subject.
 
 
-// let totalMarkofComputer = 0
-// let avgmarkOfComputer
+let totalMarkofComputer = 0
+let avgmarkOfComputer
 
-// for( let i = 0; i < studentDetails.length;i++) {
+for( let i = 0; i < studentDetails.length;i++) {
 
-//     totalMarkofComputer =  totalMarkofComputer + studentDetails[i].computer
+    totalMarkofComputer =  totalMarkofComputer + studentDetails[i].computer
 
-// // let AvgMarkOfComputer = (studentDetails[i].computer)
+// let AvgMarkOfComputer = (studentDetails[i].computer)
 
-//    console.log(totalMarkofComputer);
+   console.log(totalMarkofComputer);
 
-// }
+}
 
 
 
@@ -178,7 +176,7 @@ for(let studentDetail of studentDetails) {
             console.log( percentage +" % GRADE: F");
         }
 // Print the total number of students passed and their names. Pass when total marks is greater than 35%.  
-
+//use triany operator here
         percentage >35 ? console.log( "PASS :congrtaulation " + studentDetail.name ):  console.log(" Fail: Better luck next time "+ studentDetail.name);
 
 
