@@ -34,6 +34,7 @@ const studentDetails = [
 		english: 35,
 		computer: 30
 	},
+
 	{
 		roll: "3",
 		name: "Neha Maurya",
@@ -60,14 +61,14 @@ const studentDetails = [
 	}
 ];
 
+//Q-1.1 Print the name and total marks of each student.
 
-/*
- for( let i = 0; i<=studentDetails.length;i++){
+
+//  for( let i = 0; i<=studentDetails.length;i++){
     
-     console.log(studentDetails[i].name);
+//      console.log(studentDetails[i].name);
 
- }
- */
+//  }
 
 
 /*  for(let studentDetail of studentDetails) {
@@ -75,4 +76,35 @@ const studentDetails = [
     console.log(studentDetail.name);
   } */
 
- let PrintName = studentDetails.map(studentName => studentName.name)    //using modern array method
+//  let PrintName = studentDetails.map(studentName => studentName.name)    //using modern array method
+
+
+
+// ---------------------  print total marks --------------------------
+
+/*    
+ for (let i = 0; i < studentDetails.length; i++) {
+
+  console.log(Number(studentDetails[i].computer+studentDetails[i].english+studentDetails[i].maths+studentDetails[i].science));   
+
+ }
+ */
+
+//  2nd method to write function using forEach
+
+/*
+ studentDetails.forEach(studentDetail => {
+
+    console.log("TOTAL marks:"+Number(studentDetail.computer+studentDetail.english+studentDetail.maths+studentDetail.science));   
+
+ })   */
+
+ //  3rd method to write function using 'of' loop
+
+ for(let studentDetail of studentDetails) {
+
+    console.log("TOTAL marks:"+ Number(studentDetail.computer + studentDetail.english + studentDetail.maths + studentDetail.science));   
+
+
+ }
+
