@@ -76,12 +76,16 @@ const studentDetails = [
 
 // ---------------------  print total marks --------------------------
 
- for (let i = 0; i < studentDetails.length; i++) {
-
-  console.log(Number(studentDetails[i].computer+studentDetails[i].english+studentDetails[i].maths+studentDetails[i].science));   
-
- }
- 
+for (let i = 0; i < studentDetails.length; i++) {
+  console.log(
+    Number(
+      studentDetails[i].computer +
+        studentDetails[i].english +
+        studentDetails[i].maths +
+        studentDetails[i].science
+    )
+  );
+}
 
 //  2nd method to write function using forEach
 
@@ -105,10 +109,9 @@ const studentDetails = [
 let heigestMark = 0;
 let nameofStudent = "";
 
-
 studentDetails.forEach((studentsMarks) => {
   let totalMark = Number(
-      studentsMarks.computer +
+    studentsMarks.computer +
       studentsMarks.english +
       studentsMarks.maths +
       studentsMarks.science
@@ -118,11 +121,9 @@ studentDetails.forEach((studentsMarks) => {
     heigestMark = totalMark;
     nameOfStudent = studentsMarks.name;
   }
-
 });
 
 console.log(nameOfStudent + "is height markwhich  is:" + heigestMark);
-
 
 //1.3  Print the name of student whose total marks is lowest.
 
@@ -130,57 +131,119 @@ console.log(nameOfStudent + "is height markwhich  is:" + heigestMark);
 
 //1.4 Print the average marks of the class in computer subject.
 
+let totalMarkofComputer = 0;
 
-let totalMarkofComputer = 0
+for (let i = 0; i < studentDetails.length; i++) {
+  totalMarkofComputer = totalMarkofComputer + studentDetails[i].computer / 4;
 
-for( let i = 0; i < studentDetails.length;i++) {
+  // let AvgMarkOfComputer = (studentDetails[i].computer)
 
-    totalMarkofComputer =  totalMarkofComputer + studentDetails[i].computer/4
-
-// let AvgMarkOfComputer = (studentDetails[i].computer)
-
-   console.log(totalMarkofComputer);
-
+  console.log(totalMarkofComputer);
 }
 
-
-
-
-
- /* Q 1.5 ->Print the grades of all students:
+/* Q 1.5 ->Print the grades of all students:
 Grade A if total marks is higher than or equal to 75%,
 Grade B if higher than or equal to 60%,
 Grade C if higher than or equal to 35%,
 Grade D if lower than 35%.
 let totalMarks, percentage  */
 
-for(let studentDetail of studentDetails) {
+for (let studentDetail of studentDetails) {
+  totalMarks = Number(
+    studentDetail.computer +
+      studentDetail.english +
+      studentDetail.maths +
+      studentDetail.science
+  );
 
-     totalMarks = Number(studentDetail.computer + studentDetail.english + studentDetail.maths + studentDetail.science);
+  percentage = parseFloat((totalMarks / 400) * 100);
 
-      percentage = parseFloat(totalMarks/400*100)
+  if (percentage >= 75) {
+    console.log(percentage + "% GRADE: A");
+  } else if (percentage >= 60) {
+    console.log(percentage + " % GRADE: B");
+  } else if (percentage >= 35) {
+    console.log(percentage + "% GRADE: C");
+  } else if (percentage < 35) {
+    console.log(percentage + " % GRADE: F");
+  }
+  // Print the total number of students passed and their names. Pass when total marks is greater than 35%.
+  //use triany operator here
+  percentage > 35
+    ? console.log("PASS :congrtaulation " + studentDetail.name)
+    : console.log(" Fail: Better luck next time " + studentDetail.name);
+}
 
-          if(percentage >= 75) {
+// Create two objects with name, age, and yuga as Ram, 25, Treta. Krishna, 31, Dwapar. Write a function which takes two objects and return the person with more age.
 
-            console.log( percentage +"% GRADE: A");
-          }
+var Person = [
+  {
+    name: "Treta",
+    age: 25,
+    yuga: "Ram",
+  },
 
-          else  if (percentage >= 60){
-              console.log(percentage+" % GRADE: B");
-          }
-          else  if (percentage >= 35){
-            console.log(percentage + "% GRADE: C");
-        }
-        else  if (percentage <35 ){
-            console.log( percentage +" % GRADE: F");
-        }
-// Print the total number of students passed and their names. Pass when total marks is greater than 35%.  
-//use triany operator here
-        percentage >35 ? console.log( "PASS :congrtaulation " + studentDetail.name ):  console.log(" Fail: Better luck next time "+ studentDetail.name);
+  {
+    name: "krishna",
+    age: 31,
+    yuga: "dwapar",
+  },
+];
+
+function elderAge() {
+  let moreAge = 0;
+
+  let personName = "";
+
+  for (let i = 0; i < Person.length; i++) {
+    if (Person[i].age > moreAge) {
+      personName = Person[i].name;
+
+      moreAge = Person[i].age;
+    }
+  }
+
+  console.log(personName + " whic age is " + moreAge);
+}
+
+elderAge();
+
+// Create two objects with name, power, and yuga as Ram, 2500, Treta. Krishna, 2325, Dwapar. Write a function which takes two objects and return the person with more power.
 
 
-      }
-      
-    
+let PowerfullPersons = [
+  {
+    name: "Treta",
+    power: 2500,
+    yuga: "Ram",
+  },
+
+  {
+    name: "krishna",
+    power: 2325,
+    yuga: "dwapar",
+  },
+];
 
 
+function personWithPower() {
+
+  let MorePower = 0;
+  let PersonName = "";
+
+  for (let PowerfullPerson of PowerfullPersons) {
+
+
+
+    if (PowerfullPerson.power > MorePower) {
+
+      MorePower = PowerfullPerson.power;
+      PersonName = PowerfullPerson.name
+
+    }
+  }
+
+  console.log(" Person Name is " + PersonName + " and his power has " +  MorePower);
+}
+
+personWithPower();
