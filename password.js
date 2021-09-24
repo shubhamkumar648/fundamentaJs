@@ -4,6 +4,7 @@
 let PasswordEL = document.querySelector("#pass-word")
 
 let PassCheck   = document.querySelector("#Passcheck")
+
 PassCheck.addEventListener("click" ,() => {
 
     let PasswordLength = PasswordEL.value
