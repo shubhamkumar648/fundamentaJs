@@ -132,11 +132,10 @@ console.log(nameOfStudent + "is height markwhich  is:" + heigestMark);
 
 
 let totalMarkofComputer = 0
-let avgmarkOfComputer
 
 for( let i = 0; i < studentDetails.length;i++) {
 
-    totalMarkofComputer =  totalMarkofComputer + studentDetails[i].computer
+    totalMarkofComputer =  totalMarkofComputer + studentDetails[i].computer/4
 
 // let AvgMarkOfComputer = (studentDetails[i].computer)
 

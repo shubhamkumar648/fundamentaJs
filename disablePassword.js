@@ -6,13 +6,14 @@ const passwordValue = document.querySelector("#passwordValue")
 const repasswordValue= document.querySelector("#repasswordValue")
 const btnEl = document.querySelector("#btn-EL")
 
+btnEl.disabled = true
 
 
 if(passwordValue.value === repasswordValue.value) {
 
-    btnEl.disabled = true
 }
 
 else {
-    btnEl.disabled = false;
+
+    console.log("false");
 }

@@ -1,3 +1,9 @@
+:root {
+
+  --primary-color: #7264ed;
+  --secondary-color: #db0e4c;
+}
+
 *{
 
     margin: 0;
@@ -17,4 +23,20 @@
   .fa {
     margin-left: -12px;
     margin-right: 8px;
+  }
+
+
+
+  .colorVariable h4 {
+
+    color: var(--primary-color)
+  }
+
+  .colorVariable h2 {
+    color: var(--secondary-color)
+  }
+
+  #btn-EL {
+
+    color: var(--primary-color);
   }
