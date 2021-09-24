@@ -243,7 +243,37 @@ function personWithPower() {
     }
   }
 
-  console.log(" Person Name is " + PersonName + " and his power has " +  MorePower);
+  console.log(" more power has " + PersonName + " and his power has " +  MorePower);
 }
 
 personWithPower();
+
+
+// Create two objects with name, power, and yuga as Ram, 2500, Treta. Krishna, 2325, Dwapar. Say if every character in name is worth 35 power points. Write a function which takes two objects and return the person with more power based on their name and power both.
+
+
+let YugaPersons = [
+  {
+    name: "Treta",
+    power: 2500,
+    yuga: "Ram",
+  },
+
+  {
+    name: "krishna",
+    power: 2325,
+    yuga: "dwapar",
+  },
+];
+
+
+
+function MorePowerbasedOnBoth () {
+
+
+
+for( let YugaPerson of YugaPersons) {
+
+}
+
+}
