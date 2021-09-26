@@ -9,14 +9,16 @@ let apiBtn = document.querySelector("#apiBtn")
 let Serverurl = "https://lessonfourapi.tanaypratap.repl.cotranslate/yoda.json"
 
 
+function getText(text) {
+    return "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?" + "text=" + text;
+  }
+  
 
 
-function errorHandler(error) {
+ function errorHandler(error) {
 
-apiCallMessage.innerText = error;
-
-
-}
+ apiCallMessage.innerText = error;
+ }
 
 apiBtn.addEventListener("click" , () => {
 
