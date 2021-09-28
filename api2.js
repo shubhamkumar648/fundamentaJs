@@ -5,11 +5,22 @@ const fullName = document.querySelector("#fullName")
 
 const responseBtn = document.querySelector('#response')
 
-apiUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+const apidisplayName = document.querySelector('#apiCallName')
+
+ let apiUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
+
+function getText (text) {
+    return apiUrl + "?" +"text=" + text;
+
+}
 
 responseBtn.addEventListener("click" , () => {
 
-    fetch(apiUrl)
+    let inputTextName = fullName.value
+    fetch(getText(inputTextName))
     .then( response => response.json())
+    .then( json => {apidisplayName.innerText = json.contents.text})
     .catch(error => console.error("unable to get item", error))
 })
+

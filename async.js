@@ -2,16 +2,24 @@
  
  when one function has to wait for  other function (wait for load file)   */
 
- //example
 
-let displayasync = document.querySelector("#async")
+ let displayasync = document.querySelector("#async")
 
-  function myfunction() {
+//   function myfunction() {
 
-    displayasync.innerHTML = "hello i am  async shubham"
-    displayasync.style.color = "brown"
+//     displayasync.innerHTML = "hello i am  asyncshubham"
+//     displayasync.style.color = "brown"
+
+//   }
+
+
+  setTimeout(  function () {myfunction('i am shubham')}, 3000)
+
+  function myfunction( value) {
+
+  displayasync.innerHTML = value
+  displayasync.style.color = "brown"
 
   }
 
 
-  setTimeout( myfunction, 3000)
