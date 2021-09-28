@@ -1,3 +1,6 @@
+
+//calling a funtion as an argument in to another function  called callback function
+
 const displaycallBack = document.querySelector("#callBack")
 
 function Mydisplay (output) {
@@ -15,5 +18,9 @@ function calculator(num1,num2,mycallBack) {
 }
 
 calculator(5,2,Mydisplay)
+
+
+
+
 
    
