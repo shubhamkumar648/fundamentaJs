@@ -262,7 +262,7 @@ let YugaPersons = [
   {
     name: "krishna",
     power: 2325,
-    yuga: "dwapar",
+    yuga: "dwapar"
   },
 ];
 
