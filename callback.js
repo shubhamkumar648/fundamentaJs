@@ -25,7 +25,6 @@ calculator(5,2,Mydisplay)
 function Information(question,name,designation) {
 
     console.log(question,name(),designation());
-
 }
 
 function infoName() {

@@ -62,6 +62,9 @@ console.log(aplhaNUmerric("123sk"));
 
 // A program that reads three strings and prints the longest and smallest one
 
+
+
+
 // A program that counts number of vowels and consonants in a String?
 
 // Write a program which receives a string str that calculates the length of a string and return true if the length is greater than 7 without using strlen()
