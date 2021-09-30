@@ -37,9 +37,10 @@ console.log(" total marks " + totalMarks)
 if(totalMarks > highestMarks) {
 
   highestMarks = totalMarks;
-
   name = studentName;
+ 
 }
+
 console.log(" heighestMark is " + highestMarks + "and name is " + name)
   
 }
