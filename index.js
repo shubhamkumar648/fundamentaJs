@@ -14,3 +14,6 @@ btnEl.addEventListener( 'click' , () => {
     displayOutput.innerText = reverseString
 
 })
+
+
+// Here’s an API. Fetch the name and age of user and show them on the web page. Now check weather the user is eligible for vaccination ( must be above 45 ). If yes, show the name in green colour. API 
