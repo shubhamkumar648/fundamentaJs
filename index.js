@@ -45,6 +45,8 @@ MinusBtn.addEventListener("click", () => {
 
 // Create a game (Guess The Number) where user has to guess the random number range from 1 to 10. User will input a number between 1 to 10 . On clicking the button, show the user whether he/she has guess the number or not.
 
+// note:  this solution is incomplete i will solve using random method
+
 const userInputEl = document.querySelector("#user-Input");
 const userBtn = document.querySelector("#user-btn");
 const userOutput = document.querySelector("#userOutput");
@@ -56,3 +58,18 @@ userBtn.addEventListener("click", () => {
     userOutput.innerText = "you guess wrong number";
   }
 });
+
+// 1. Create an array of 10 names. [ "Abhi", "Vishal","Aryan","John",.........upto 10 ]. Now create a button. On clicking the button, show one random name.
+    
+const arrNameDisplay = document.querySelector("#click-user");
+const clickBtnEl = document.querySelector("#click-btn");
+
+let arr = [ "Abhi", "Vishal","Aryan","John","shubham","Raghav", "Punit", "Michael","harpreet","Sarukh"];
+
+
+
+clickBtnEl.addEventListener("click" , () => {
+  let randomIndex = Math.floor(Math.random() * 10);
+
+arrNameDisplay.innerText = arr[randomIndex]
+  })
