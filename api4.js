@@ -9,12 +9,17 @@ const apicallBtn = document.querySelector("#apiCall-btn")
 let url = 'https://randomuser.me/api/?results=10'
 
 
+let showData = []
+
+
 
 apicallBtn.addEventListener( "click",()=> {
 
+
+
     fetch(url)
     .then(response => response.json())
-    .then(json => setData(json.results))
-     .catch(error => console.error("not fetching  api.." +error))
+    .then(json => console.log(showData[json.results.name]))
+    .catch(error => console.error("not fetching  api.." +error))
 
 })

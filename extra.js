@@ -12,36 +12,36 @@
 //   displayOutput.innerText = reverseString;
 // });
 
-// // Put a paragraph on web with 16px font size. Now Increase the font size by 4px and vice-versa with the help of two buttons. Now change the colour of paragraph to RED when font size is divisible by 5. ( This question was given by Pranshu (neoGrad) in my mock interview)
+// Q. Put a paragraph on web with 16px font size. Now Increase the font size by 4px and vice-versa with the help of two buttons. Now change the colour of paragraph to RED when font size is divisible by 5. ( This question was given by Pranshu (neoGrad) in my mock interview)
 
-// const inputTextEl = document.querySelector("#input-text");
-// const checkBtnEl = document.querySelector("#check-btn");
-// const plusBtn = document.querySelector("#plus");
-// const MinusBtn = document.querySelector("#minus");
-// const textDisplayEl = document.querySelector("#textDisplay");
-// // const fontDisplay = document.querySelector("#font-Display")
+const inputTextEl = document.querySelector("#input-text");
+const checkBtnEl = document.querySelector("#check-btn");
+const plusBtn = document.querySelector("#plus");
+const MinusBtn = document.querySelector("#minus");
+const textDisplayEl = document.querySelector("#textDisplay");
+// const fontDisplay = document.querySelector("#font-Display")
 
-// let num = 16;
+let num = 16;
 
-// checkBtnEl.addEventListener("click", () => {
-//   textDisplayEl.innerText = inputTextEl.value;
+checkBtnEl.addEventListener("click", () => {
+  textDisplayEl.innerText = inputTextEl.value;
 
-//   if (textDisplayEl.style.num % 5 === 0) {
-//     textDisplayEl.style.color = "red";
-//   } else {
-//     textDisplayEl.style.color = "green";
-//   }
-// });
+  if (textDisplayEl.style.num % 5 === 0) {
+    textDisplayEl.style.color = "red";
+  } else {
+    textDisplayEl.style.color = "green";
+  }
+});
 
-// plusBtn.addEventListener("click", () => {
-//   num = num + 4;
-//   textDisplayEl.style.fontSize = `${num}px`;
-// });
+plusBtn.addEventListener("click", () => {
+  num = num + 4;
+  textDisplayEl.style.fontSize = `${num}px`;
+});
 
-// MinusBtn.addEventListener("click", () => {
-//   num = num - 4;
-//   textDisplayEl.style.fontSize = `${num}px`;
-// });
+MinusBtn.addEventListener("click", () => {
+  num = num - 4;
+  textDisplayEl.style.fontSize = `${num}px`;
+});
 
 // // Create a game (Guess The Number) where user has to guess the random number range from 1 to 10. User will input a number between 1 to 10 . On clicking the button, show the user whether he/she has guess the number or not.
 
