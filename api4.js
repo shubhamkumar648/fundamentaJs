@@ -15,13 +15,14 @@ let setData = () => {
     data.map((user, index)=>{  
     
     <div>
+       <ul>
 
-      <ul>
         <li key={index}></li>
         <li>{user.name.first}</li>
-
         <li>{user.dob.age}</li>
+
       </ul>
+      
     </div> 
 });
 };

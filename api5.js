@@ -9,19 +9,17 @@ let urlApi = "https://mystery-api.kushanksriraj.repl.co/get"
 
 apiBtncall.addEventListener("click", () => {
 
-
-    fetch(urlApi)
+ fetch(urlApi)
     .then((response) => {
         
         if(response.status === 404) {
-
-          console.log("page not found");
-
-        }
+                   console.log("page not found");
+                    }
 
         else if(response.status === 401) {
          console.log("you are not loged in");
         }
+
         else {
             console.log("error");
         }
